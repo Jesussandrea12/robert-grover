@@ -1,0 +1,48 @@
+/* media queries */
+
+@media screen and (min-width: 1024px) {
+  .about-section {
+    min-height: 800px;
+  }
+
+  .overlay img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topbar-responsive .menu a {
+    margin: 0 5px;
+  }
+
+  .topbar-responsive .menu {
+    margin: 0;
+  }
+
+  .overlay img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-section {
+    margin: 1.5em;
+  }
+
+  .contact p {
+    margin: 0 1em;
+  }
+
+  .overlay img {
+    height: auto;
+  }
+
+  .overlay-inner {
+    margin: 10px;
+  }
+
+  .grid-container .item {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}

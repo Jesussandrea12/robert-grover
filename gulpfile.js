@@ -14,7 +14,7 @@ var browserSync = require('browser-sync').create()
 gulp.task('serve', function () {
   browserSync.init({
     server: {
-      baseDir: './dist'
+      baseDir: ''
     }
   })
 })
@@ -42,7 +42,7 @@ gulp.task('css', function () {
 gulp.task('watch', function () {
   gulp.watch('./src/*.css', ['css'])
   gulp.watch('./dist/js/*.js').on('change', browserSync.reload)
-  gulp.watch('./dist/*.html').on('change', browserSync.reload)
+  gulp.watch('./*.html').on('change', browserSync.reload)
 })
 
 gulp.task('default', ['watch', 'serve'])
